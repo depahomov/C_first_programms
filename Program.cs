@@ -64,6 +64,7 @@ else
 7 -> нет
 */
 
+/*
 Console.Write("Введите целое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 if (a % 2 == 0)
@@ -74,3 +75,30 @@ else
 {
     Console.WriteLine($"Число {a} нечётное");
 }
+*/
+
+/*
+Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+5 -> 2, 4
+8 -> 2, 4, 6, 8
+*/
+
+int N = 0;
+do
+{
+Console.Write("Введите целое положительное число: ");
+N = Convert.ToInt32(Console.ReadLine());
+}
+while (N <= 0);
+int count = 1;
+Console.Write($"{N} -> ");
+while (count <= N)
+{
+    if (count % 2 == 0)
+    {
+        Console.Write($"{count}  ");
+    }
+count ++;
+}
+
+
